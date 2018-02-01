@@ -1,0 +1,32 @@
+While (getColor !=pink) {
+	Down
+}
+if (getColor == “pink”) {
+	right
+	right
+}
+While (getColor !=pink) {
+	up
+}
+if (getColor == “pink”) {
+	right
+	right
+}
+While (getColor !=pink) {
+	down
+}
+if (getColor == “pink”) {
+	right
+	right
+}
+While (getColor !=pink) {
+	up
+}
+if (getColor == “pink”) {
+	right
+	right
+}
+While (getColor !=pink) {
+	down
+}
+right
