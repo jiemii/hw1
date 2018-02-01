@@ -1,0 +1,9 @@
+up
+right
+up
+If (getColor == “blue”) {
+	right
+} else { getColor == “pink”}
+	left
+}
+up
