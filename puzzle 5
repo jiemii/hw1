@@ -1,0 +1,24 @@
+right 
+right
+If (getColor == “blue”) {
+	down
+} else { 
+	up
+}
+right
+right
+If (getColor == “blue”) {
+	down
+} else { 
+	up
+}
+right
+right
+If (getColor == “blue”) {
+	down
+} else { 
+	up
+}
+right
+right
+right
