@@ -18,3 +18,91 @@ While (steps < 9) {
 	up
 	steps = steps + 1
 }
+
+
+//js
+
+Plan A:
+
+function repeatRight (total){
+var steps = 0;
+while (steps < 9) {
+	right();
+	steps = steps + 1
+  setColor("blue");
+}
+}
+function repeatDown (total){
+var steps = 0;
+while (steps < 9) {
+	down();
+	steps = steps + 1
+  setColor("blue");
+}
+}
+function repeatLeft (total){
+var steps = 0;
+while (steps < 9) {
+	left();
+	steps = steps + 1
+  setColor("blue");
+}
+}
+function repeatUp (total){
+var steps = 0;
+while (steps < 9) {
+	up();
+	steps = steps + 1
+  setColor("blue");
+}
+}
+
+repeatRight();
+repeatDown();
+repeatLeft();
+repeatUp();
+
+
+
+Plan B:
+
+function repeatDown(total) {
+  var count = 0;
+  while (count < total) {
+    down();
+    count = count + 1;
+    setColor("blue")
+  }
+}
+
+function repeatRight(total) {
+  var count = 0;
+  while (count < total) {
+    right();
+    count = count + 1;
+     setColor("blue")
+  }
+}
+
+function repeatUp(total) {
+  var count = 0;
+  while (count < total) {
+    up();
+    count = count + 1;
+     setColor("blue")
+  }
+}
+
+function repeatLeft(total) {
+  var count = 0;
+  while (count < total) {
+    left();
+    count = count + 1;
+     setColor("blue")
+  }
+}
+
+repeatDown(9);
+repeatRight(9);
+repeatUp(9);
+repeatLeft(9);
