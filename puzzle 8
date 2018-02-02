@@ -33,3 +33,104 @@ right
 right
 downSevenTimes
 right
+
+
+//js
+
+Plan A:
+
+function downSevenTimes(){
+  down();
+  down();
+  down();
+  down();
+  down();
+  down();
+  down();
+}
+function upSevenTimes(){
+  up();
+  up();
+  up();
+  up();
+  up();
+  up();
+  up();
+}
+
+down();
+downSevenTimes();
+right();
+right();
+upSevenTimes();
+right();
+right();
+downSevenTimes();
+right();
+right();
+upSevenTimes();
+right();
+right();
+downSevenTimes();
+right();
+
+Plan B:
+
+function downSevenTimes(){
+  down();
+  down();
+  down();
+  down();
+  down();
+  down();
+  down();
+}
+function upSevenTimes(){
+  up();
+  up();
+  up();
+  up();
+  up();
+  up();
+  up();
+}
+
+function move(){
+  right();
+  right();
+}
+
+down();
+downSevenTimes();
+move();
+upSevenTimes();
+move();
+downSevenTimes();
+move();
+upSevenTimes();
+move();
+downSevenTimes();
+right();
+
+
+Plan C:
+
+function repeat (direction,n){
+   var count=0
+   while(count<n) {
+         direction();
+     
+      count= count+1
+   }
+ }
+
+repeat(down,8);
+repeat(right,2);
+repeat(up,7);
+repeat(right,2);
+repeat(down,7)
+repeat(right,2)
+repeat(up,7)
+repeat(right,2)
+repeat(down,7)
+repeat(right,1)
