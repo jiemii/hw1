@@ -22,3 +22,56 @@ If (getColor == “blue”) {
 right
 right
 right
+
+
+//js
+
+Plan A:
+
+right();
+right();
+if (getColor() == "blue") {
+  down();
+} 
+if (getColor() == "red") {
+  up();
+}
+right();
+right();
+if (getColor() == "blue") {
+  down();
+} 
+if (getColor() == "red") {
+  up();
+}
+right();
+right();
+if (getColor() == "blue") {
+  down();
+} 
+if (getColor() == "red") {
+  up();
+}
+right();
+right();
+right();
+
+Plan B:
+function A(){
+  if (getColor() == "blue") {
+  down();
+  right();
+  right();
+} else {
+  up();
+  right();
+  right();
+}
+}
+
+right();
+right();
+A();
+A();
+A();
+right();
